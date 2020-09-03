@@ -3,10 +3,16 @@
 * Wraps IWinHttpRequest class
 * Developed and tested with Dolphin Smalltalk 7.1
 
-## Getting Started
-* To download and install, evaluate the following code snippet:  
-`SourceManager default fileItIn: (File readAllText: (URLMonLibrary default urlDownloadToCacheFile: 'https://raw.githubusercontent.com/rko281/RESTClient/master/install.st'))`   
-* OR Download the repository to your Dolphin working directory and install the package `REST Client`  
+### Automated Installation
+* Install [GitHub Package Manager](https://github.com/rko281/GitHub)
+* Evaluate:
+```
+GitHubPackageManager install: 'rko281/RESTClient'
+```
+
+### Manual Installation
+* This repository should be cloned/downloaded to your image directory
+* Install the package `REST Client`  
     
-Example Usage:   
+### Example Usage:   
     `(RESTRequest url: 'https://jsonplaceholder.typicode.com/posts') get json`
